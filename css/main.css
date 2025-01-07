@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+
+
+body{font-family: 'pretendard', sans-serif; line-height: 1.5; font-size: 1.6rem; color: #000;}
+.inner{max-width: 1500px; margin: 0 auto; padding: 0 5%;}
+
+
+
+/* header */
+#header{position: fixed; left: 0; top: 0; width: 100%; height: 91.5px; z-index: 100;
+background: rgba(20, 20, 20, 0.9); opacity: 0.8;}
+#header .inner{display: flex; flex-wrap: wrap; align-items: center; height: 91.5px;}
+#header .inner h1 a img{vertical-align: middle;}
+#header .gnb{display: flex; padding: 0px 0px 0px 150px;}
+#header .gnb li a{display: block; font-size: 2.1rem; color: #fff; 
+padding: 30px 30px;}
+
+@media(max-width: 1350px){
+    #header .gnb{padding: 0px 0px 0px 50px;}
+    #header .gnb li a{padding: 30px 20px; font-size: 1.8rem;}
+}
+
+@media(max-width: 1030px){
+    #header{height: 80px;}
+    #header .inner{height: 80px;}
+    #header .gnb{display: none;}
+    #header .inner h1 a img{width: 150px; height: 30px;}
+}
+
+/* 메인 비쥬얼 */
+.main_visual{position: relative;}
+.main_visual img{width: 100%;}
+
+@media(max-width: 768px){
+    .mob{display: block;}
+    .pc{display: none;}
+
+}
+
+
+/* 퀵메뉴 */
+.quick_menu{position: fixed; right: 2%; top: 300px; text-align: center; z-index: 1000;}
+.quick_menu a img{padding-top: 10px; width: 70px; height: 80px;}
+
+@media(max-width: 768px){
+    .quick_menu a img{width: 60px; height: 70px;}
+}
+@media(max-width: 445px){
+    .quick_menu a img{width: 50px; height: 60px;}
+}
+.pc{display: block;}
+.mob{display: none;}
+section img{width: 100%;}
+
+/* 원장소개 */
+#section1 img{width: 100%;}
+
+@media(max-width: 768px){
+    .mob{display: block;}
+    .pc{display: none;}
+}
+
+
+/* 특별함 */
+#section2{position: relative;}
+#section2 img{width: 100%;}
+#section2 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section2 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px;}
+#section2 .txt p{font-size: 2rem; }
+
+@media(max-width: 1219px){
+    #section2 .txt h2{font-size: 4rem; }
+    #section2 .txt p{font-size: 1.6rem; }
+}
+
+
+
+@media(max-width: 768px){
+    .mob{display: block;}
+    .pc{display: none;}
+}
+
+@media(max-width: 591px){
+    #section2 .txt h2{font-size: 3rem;}
+    #section2 .txt p{font-size: 1.4rem; }
+}
+
+@media(max-width: 445px){
+    #section2 .txt h2{font-size: 2.5rem;}
+    #section2 .txt p{display: none;}
+}
+
+
+/* 수액요법 */
+#section3{position: relative;}
+#section3 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section3 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px; color:#fff;}
+#section3 .txt p{font-size: 2rem; color: #878787;}
+
+@media(max-width: 1219px){
+    #section3 .txt h2{font-size: 4rem; }
+    #section3 .txt p{font-size: 1.6rem; }
+}
+
+@media(max-width: 1050px){
+    #section3 .txt h2{padding-bottom: 0px;}
+}
+
+@media(max-width: 768px){
+    #section3 .txt{top: 5%;}
+    .mob{display: block;}
+    .pc{display: none;}
+    #section3 .txt p{display: none; }
+}
+
+@media(max-width: 591px){
+    #section4 .txt h2{font-size: 3rem;}
+    #section4 .txt p{font-size: 1.4rem; }
+}
+
+@media(max-width: 445px){
+    #section3 .txt h2{font-size: 2.5rem;}
+    
+}
+
+/* 척추 치료 */
+#section4{position: relative;}
+#section4 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section4 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px;}
+#section4 .txt p{font-size: 2rem; color: #878787;}
+
+@media(max-width: 1219px){
+    #section4 .txt h2{font-size: 4rem; }
+    #section4 .txt p{font-size: 1.6rem; }
+}
+
+@media(max-width: 1050px){
+    #section4 .txt h2{padding-bottom: 0px;}
+}
+
+
+@media(max-width: 768px){
+    #section4 .txt{top: 5%;}
+    .mob{display: block;}
+    .pc{display: none;}
+    #section4 .txt p{display: none; }
+}
+
+@media(max-width: 591px){
+    #section4 .txt h2{font-size: 3rem;}
+    #section4 .txt p{font-size: 1.4rem; }
+}
+
+@media(max-width: 445px){
+    #section4 .txt h2{font-size: 2.5rem;}
+   
+}
+
+
+/* 척추 치료 과정 */
+#section5{position: relative;}
+#section5 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section5 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px; color: #fff;}
+#section5 .txt p{font-size: 2rem; color: #878787;}
+
+@media(max-width: 1219px){
+    #section5 .txt h2{font-size: 4rem; }
+    #section5 .txt p{font-size: 1.6rem; }
+}
+
+@media(max-width: 1050px){
+    #section5 .txt h2{padding-bottom: 0px;}
+}
+
+
+@media(max-width: 768px){
+    #section5 .txt{top: 5%;}
+    .mob{display: block;}
+    .pc{display: none;}
+    #section5 .txt p{display: none;}
+}
+
+@media(max-width: 591px){
+    #section5 .txt h2{font-size: 3rem;}
+    #section5 .txt p{font-size: 1.4rem; }
+}
+
+@media(max-width: 445px){
+    #section5 .txt h2{font-size: 2.5rem;}
+    
+}
+
+/* 족부 클리닉 */
+#section6{position: relative;}
+#section6 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section6 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px; color: #000;}
+#section6 .txt p{font-size: 2rem; color: #878787;}
+
+@media(max-width: 1219px){
+    #section6 .txt h2{font-size: 4rem; }
+    #section6 .txt p{font-size: 1.6rem; }
+}
+
+@media(max-width: 1050px){
+    #section6 .txt h2{padding-bottom: 0px;}
+}
+
+@media(max-width: 930px){
+    #section6 .txt{top: 5%;}
+    
+}
+
+@media(max-width: 768px){
+    .mob{display: block;}
+    .pc{display: none;}
+    #section6 .txt p{font-size: 1.4rem; }
+    
+}
+
+@media(max-width: 591px){
+    #section6 .txt h2{font-size: 3rem;}
+    #section6 .txt p{font-size: 1.2rem; }
+}
+
+@media(max-width: 445px){
+    #section6 .txt h2{font-size: 2.5rem;}
+    
+}
+/* 오스트레시 */
+#section7 img{width: 100%;}
+
+@media(max-width: 768px){
+    .mob{display: block;}
+    .pc{display: none;}
+}
+
+/* 진료항목 */
+#section8{text-align: center; position: relative; background: url(../img/mv.bg1.png) no-repeat center; 
+height: 900px; padding: 210px 0 0;}
+#section8 .inner{ align-items: center;}
+#section8 .txt{text-align: center; position: absolute; top: 10%; left: 50%; transform: translate(-50%);}
+#section8 .txt h2{font-size: 5rem; font-weight: 500; padding-bottom: 10px; color: #fff;}
+#section8 .txt p{font-size: 2rem; color: #878787; padding-bottom: 40px;}
+.mv_img ul li img{width: 100%;}
+#section8 .mv_img{justify-content: center; align-items: center;}
+#section8 .swiper-button-prev{color: #fff;}
+#section8 .swiper-button-next{color: #fff;}
+
+    
+@media(max-width: 1219px){
+    #section8 .txt h2{font-size: 4rem; }
+    #section8 .txt p{font-size: 1.6rem; }
+}
+@media(max-width: 1040px){
+    #section8{height: 800px; padding: 160px 0;}
+}
+@media(max-width: 950px){
+    #section8{height: 700px;}
+}
+@media(max-width: 634px){
+    #section8{height: 900px;}
+}
+
+@media(max-width: 591px){
+    #section8{height: 800px;}
+    #section8 .txt h2{font-size: 3rem;}
+    #section8 .txt p{font-size: 1.4rem; }
+}
+@media(max-width: 485px){
+    #section8{height: 700px;}
+}
+
+@media(max-width: 445px){
+    #section8 .txt h2{font-size: 2.5rem;}
+    #section8 .txt p{display: none;}
+}
+@media(max-width: 400px){
+    #section8{height: 600px;}
+}
+
+    
+
+/* 병원 시설 */
+#section9{text-align: center; position: relative;}
+#section9 .mb_control{position: absolute; left: 50%; transform: translateX(-50%); bottom: 40px; display: flex; align-items: center;
+z-index: 10; gap: 20px;}
+#section9 .swiper-button-prev{position: static; width: 34px; height: 13px; color: transparent; background: url(../img/btn_prev.png)
+no-repeat center; margin: 0;}
+#section9 .swiper-button-next{position: static; width: 34px; height: 13px; color: transparent; background: url(../img/btn_next.png)
+no-repeat center; margin: 0;}
+#section9 .swiper-pagination{position: static; width: auto;}
+#section9 .swiper-pagination-fraction{font-family: var(--sub-font); font-size: 1.4rem;}
+#section9 .mb_play, .mb_pause{font-size: 2.5rem; cursor: pointer;}
+
+@media(max-width: 768px){
+    #section9 .mb_control{bottom: 20px;}
+}
+@media(max-width: 500px){
+    #section9 .mb_control{bottom: 10px;}
+}
+
+
+/* footer */
+#footer{padding: 30px 0; background: #3c3c3c;}
+#footer .inner{text-align: center; color: #fff; font-size: 1.6rem;}
+#footer .inner .ft_txt{display: flex; flex-wrap: wrap; padding: 30px 0 10px;
+justify-content: center; gap: 10px 20px;}
+#footer .inner .ft_txt a{color: #fff;}
+@media(max-width: 1030px){
+    #footer{padding: 20px 0;}
+    #footer .inner h3 a img{width: 150px; height: 100px;}
+    #footer .inner{font-size: 1.4rem;}
+}
+
+@media(max-width: 768px){
+    #footer .inner h3 a img{width: 120px; height: 80px;}
+    #footer .inner{font-size: 1.2rem;}
+}
